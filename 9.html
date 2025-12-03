@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Shagun travel</title>
+
+<style>
+    body {
+        margin: 0;
+        background: #eefaff;
+        font-family: "Segoe UI", sans-serif;
+    }
+
+    header {
+        background: #005f99;
+        color: white;
+        text-align: center;
+        padding: 28px;
+    }
+
+    nav {
+        background: #b7e5ff;
+        padding: 12px;
+        text-align: center;
+    }
+
+    nav a {
+        color: #005f99;
+        margin: 0 18px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    main {
+        max-width: 1100px;
+        margin: auto;
+        padding: 22px;
+    }
+
+    section {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 35px;
+        border: 1px solid #a8dfff;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+        color: #005f99;
+    }
+
+    .package {
+        padding: 12px 0;
+        border-bottom: 1px solid #d3efff;
+    }
+
+    .price {
+        float: right;
+        font-weight: bold;
+        color: #003f70;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 15px;
+    }
+
+    .gallery-box {
+        height: 130px;
+        background: #d4f2ff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 6px;
+        font-weight: bold;
+        color: #005f99;
+    }
+
+    form label {
+        display: block;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+
+    form input, form select, form textarea {
+        width: 100%;
+        padding: 9px;
+        border-radius: 6px;
+        border: 1px solid #a8dfff;
+        margin-top: 5px;
+    }
+
+    form button {
+        margin-top: 15px;
+        padding: 10px 22px;
+        background: #005f99;
+        color: white;
+        border-radius: 6px;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    footer {
+        background: #003f70;
+        color: white;
+        padding: 18px;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>shagun travel</h1>
+</header>
+
+<nav>
+    <a href="#packages">Packages</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#booking">Booking</a>
+</nav>
+
+<main>
+
+<section id="packages">
+    <h2>🧳 Popular Tour Packages</h2>
+
+    <div class="package">
+        <strong>Goa Beach Holiday</strong>
+        <span class="price">₹18,000</span>
+    </div>
+
+    <div class="package">
+        <strong>Kerala Backwater Tour</strong>
+        <span class="price">₹25,000</span>
+    </div>
+
+</section>
+
+<section id="gallery">
+    <h2>🏖 Gallery</h2>
+    <div class="gallery">
+        <div class="gallery-box">Goa</div>
+        <div class="gallery-box">Kerala</div>
+        <div class="gallery-box">Manali</div>
+    </div>
+</section>
+
+<section id="booking">
+    <h2>📝 Booking</h2>
+    <form>
+        <label>Name</label>
+        <input type="text">
+        <label>Email</label>
+        <input type="email">
+        <label>Phone</label>
+        <input type="tel">
+        <label>Package</label>
+        <select>
+            <option>Goa</option>
+            <option>Kerala</option>
+        </select>
+        <button>Submit</button>
+    </form>
+</section>
+
+</main>
+
+<footer>
+    © 2025 shagun travel | Student Project
+</footer>
+
+</body>
+</html>
